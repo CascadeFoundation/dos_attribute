@@ -2,7 +2,7 @@ module dos_attribute::attribute;
 
 use std::string::String;
 
-public struct Attribute has drop, store {
+public struct Attribute has copy, drop, store {
     key: String,
     value: String,
 }
